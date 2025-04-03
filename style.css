@@ -7,7 +7,7 @@
 }
 body {
   width: 100%;
-  font-family: "Poppins", sans-serif
+  font-family: "Poppins", sans-serif;
 }
 main {
   width: 70%;
@@ -18,45 +18,148 @@ main {
   margin: 5% auto 0;
 }
 .container {
-    width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.left, .right {
+.left,
+.right {
   flex: 1;
 }
-.left h1{
-    font-size: 35px;
-    max-width: 300px;
-    color: hsl(300, 43%, 22%) ;
-    line-height: 1.1;
-    font-weight: 800;
-    margin-bottom: 20px;
+.left h1 {
+  font-size: 35px;
+  max-width: 300px;
+  color: hsl(300, 43%, 22%);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
-.left p{
-    font-size: 15px;
-    color: hsl(300, 43%, 22%) ;
-    font-weight: 400;
-   max-width: 400px;
+.left p {
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 400;
+  max-width: 400px;
 }
+
 .right p {
-  display: flex;
-  align-items: center;
+  background: hsl(300, 24%, 96%);
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 15px 30px;
+  border-radius: 10px;
 }
 .star {
   display: inline-block;
-  width: 50px;
+  width: 100px;
   height: 20px;
   background-image: url("images/icon-star.svg");
   background-repeat: repeat-x;
-  background-size: 10px 10px;
+  background-size: 20px 20px;
+  margin-right: 10px;
+}
+.second {
+  margin-left: 30px;
+}
+.third {
+  margin-left: 65px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+.box-content {
+  background-color: hsla(300, 42.9%, 22%, 0.99);
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+.id {
+  display: flex;
+  align-items: center;
+}
+.image-container {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.image-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.user h2 {
+  color: #fff;
+  font-size: 15px;
+}
+.user p {
+  color: hsl(333, 80%, 67%);
+  font-size: 13px;
+}
+.comment {
+  margin-top: 10px;
+  color: #fff;
+}
+.second-box {
+  margin-top: 30px;
+}
+.third-box {
+  margin-top: 60px;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+  margin-top: 10px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  /* color: hsl(228, 45%, 44%); */
+color: aqua;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    text-align: center;
+  }
+  .left h1 {
+    margin: auto;
+    font-size: 25px;
+    max-width: 200px;
+  margin-bottom: 20px;
+
+  }
+  .right {
+    margin-top: 30px;
+  }
+  .right p {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .right p span {
+    display: block;
+    margin: auto;
+  }
+  .second,
+  .third {
+    margin-left: 0;
+  }
+  .box{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .box-content{
+    padding: 30px 20px;
+    border-radius: 5px;
+  }
+  .second-box, .third-box{
+    margin-top: 0;
+  }
 }
